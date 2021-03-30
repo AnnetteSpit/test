@@ -8,11 +8,11 @@ analyse in their prefered statical programs.
 
 The scripts in the current project use functions from various packages. In order to
 ensure the scripts can be run after new R install, the packages are loaded using
-a generic substitue, namely `p_load`, for `library` and `require`. This generic function
+a generic substitue for `library` and `require`, namely `p_load`. This generic function
 from the package `pacman` will open one or more packages and install it when the 
-packages isn't available locally. Note, however, that it will always install the
+packages isn't available locally. *Note, however, that it will always install the
 most recent package version, which might be different from the version the current
-script was build upon. In other words, using the generic load function that also
+project was build upon.* In other words, using the generic load function that also
 installs the packages when they are not locally available might result in errors
 when functions previously available in a package have been deprecated in the newer
 package version.
@@ -29,22 +29,22 @@ install_version("ggplot2", version = "0.9.1", repos = "http://cran.us.r-project.
 ```
 
 ## Package overview 
-- pacman
-- tidyverse 
-  * ggplot2
-  * dplyr
-  * purrr
-- lubridate
-- DBI
-- rstudioapi 
-- odbc
+- pacman 0.5.1
+- tidyverse, specifically:
+  * ggplot2 3.3.3
+  * dplyr 1.0.5
+  * purrr 0.3.4
+- lubridate 1.7.10
+- DBI 1.1.1
+- rstudioapi 0.13 
+- odbc 1.3.1
 - grid
-- plyr
-- scales
-- DataCombine
-- RPostgreSQL
-- reshape2
-- stringr
+- plyr 1.8.6 
+- scales 1.1.1
+- DataCombine 0.2.21
+- RPostgreSQL 0.6-2 
+- reshape2 1.4.4 
+- stringr 1.4.0
 
 # Folder structure
 
