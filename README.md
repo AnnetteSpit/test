@@ -1,8 +1,23 @@
 # Introduction 
 
-This project takes Laverdonk trail data from the Azure data warehouse and prepares it
+This project takes Laverdonk trial data from the Azure data warehouse and prepares it
 for data analysis. Output of the scripts are excel files for the end users to 
 analyse in their prefered statical programs. 
+
+## Input
+
+Data from the various Laverdonk trials is directly stored in the Azure data warehouse
+maintained by Agrovision. 
+
+### Access
+
+In order to access the data, your IP adress needs to be added to the server's secure
+list. The server name is `prd-datahub-76qbhnv5jf4a4`. By sending an email with the 
+server's name and your IP adress to [Rajkumar Balakrishnan](R.Balakrishnan@agrifirm.com),
+access can be obtained. 
+
+## Output
+
 
 # Package usage
 
@@ -29,8 +44,13 @@ install_version("ggplot2", version = "0.9.1", repos = "http://cran.us.r-project.
 ```
 
 ## Package overview 
+
+Below you will find a list of all individual packages loaded in the scripts, with
+the version number we last checked the scripts worked for. Note that the scripts
+might still work with newer package versions. 
+
 - pacman 0.5.1
-- tidyverse, specifically:
+- tidyverse 1.3.0, specifically:
   * ggplot2 3.3.3
   * dplyr 1.0.5
   * purrr 0.3.4
@@ -38,7 +58,7 @@ install_version("ggplot2", version = "0.9.1", repos = "http://cran.us.r-project.
 - DBI 1.1.1
 - rstudioapi 0.13 
 - odbc 1.3.1
-- grid
+- grid 4.0.3
 - plyr 1.8.6 
 - scales 1.1.1
 - DataCombine 0.2.21
