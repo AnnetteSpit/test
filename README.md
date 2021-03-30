@@ -31,9 +31,9 @@ install_version("ggplot2", version = "0.9.1", repos = "http://cran.us.r-project.
 ## Package overview 
 - pacman
 - tidyverse 
-..* ggplot2
-..* dplyr
-..* purrr
+  * ggplot2
+  * dplyr
+  * purrr
 - lubridate
 - DBI
 - rstudioapi 
