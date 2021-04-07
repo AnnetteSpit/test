@@ -1,10 +1,10 @@
-# Introduction 
+# **Introduction**
 
 This project takes Laverdonk trial data from the Azure data warehouse and prepares it
 for data analysis. Output of the scripts are excel files for the end users to 
 analyse in their prefered statical programs. 
 
-## Input
+## *Input*
 
 Data from the various Laverdonk trials is directly stored in an SQL Azure data warehouse
 maintained by FarmResult. Over fifty poultry and over hundred pig dataframes are stored 
@@ -18,7 +18,7 @@ added to the server's secure list. By sending an email with the server's name
 `prd-datahub-76qbhnv5jf4a4` and your IP adress to [?????](????@agrifirm.com), 
 access can be obtained. 
 
-## Output
+## *Output*
 
 At the end of the scripts, tables and graphs are exported for further analyses.
 
@@ -42,7 +42,7 @@ installs the packages when they are not locally available might result in errors
 when functions previously available in a package have been deprecated in the newer
 package version.
 
-## Install an older package version
+## *Install an older package version*
 
 Although different approaches can be used ([see for example here on Stackoverflow](https://stackoverflow.com/questions/17082341/installing-older-version-of-r-package)),
 the easiest way appears to be using the `devtools` package. For instance, in order
@@ -53,7 +53,7 @@ require(devtools)
 install_version("ggplot2", version = "0.9.1", repos = "http://cran.us.r-project.org")
 ```
 
-## Package overview 
+## *Package overview*
 
 Below you will find a list of all individual packages loaded in the scripts, with
 the version number we last checked the scripts worked for. Note that the scripts
