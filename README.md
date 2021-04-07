@@ -6,18 +6,28 @@ analyse in their prefered statical programs.
 
 ## Input
 
-Data from the various Laverdonk trials is directly stored in the Azure data warehouse
-maintained by Agrovision. 
+Data from the various Laverdonk trials is directly stored in an SQL Azure data warehouse
+maintained by FarmResult. Over fifty poultry and over hundred pig dataframes are stored 
+in this data warehouse. The current project meaningfully merges these dataframes 
+for further processing in analyses. 
 
 ### Access
 
-In order to access the data, your IP adress needs to be added to the server's secure
-list. The server name is `prd-datahub-76qbhnv5jf4a4`. By sending an email with the 
-server's name and your IP adress to [Rajkumar Balakrishnan](R.Balakrishnan@agrifirm.com),
+In order to access the data in the data warehouse, your IP adress needs to be 
+added to the server's secure list. By sending an email with the server's name 
+`prd-datahub-76qbhnv5jf4a4` and your IP adress to [?????](????@agrifirm.com), 
 access can be obtained. 
 
 ## Output
 
+At the end of the scripts, tables and graphs are exported for further analyses.
+
+Note that two sets of folders are created, one NL and one EN. Those folder contain
+the same files (with the same names) with the only difference that NL contains files
+with the Dutch regional settings (decimal seperator is a comma and thousands seperator is a dot)
+whereas the EN folder contains files with English settings (where decimal seperator is a dot and
+thousands seperator is a comma). This allows everyone to properly open the files, 
+regardless of their computer's regional settings. 
 
 # Package usage
 
@@ -65,6 +75,7 @@ might still work with newer package versions.
 - RPostgreSQL 0.6-2 
 - reshape2 1.4.4 
 - stringr 1.4.0
+- broom 0.7.5
 
 # Folder structure
 
@@ -76,18 +87,18 @@ that are used in multiple branch specific scripts.
 - LavisMonitoringAndStatistics: General folder that contains the poultry and pig 
 specific scripts. Note that each branch has its own subfolder with scripts. 
 
-## Pigs
+## *Pigs*
 
 To prepare the pigs data, distinction is made between the piglet phase and growth 
 finisher phase. Both phases have their own set of scripts. 
 
-## Poultry
+## *Poultry*
 In order to prepare the poultry data, a distinction is made between the broiler
-and layers data. In addition, the layers data can be prepared using 24 or 48 pens.
-This depends on the experimental design. 
+and layers data. In addition, depending on the experimental desing, the layers data can be prepared using 24 or 48 pens.
 
 # Questions
 
 Questions regarding the scripts can be addressed by members of the Data Science Team. 
-Practical question can be adressed to [Marijke Ubbink - Blanksma](m.ubbink@agrifirm.com)
-and [Susanne van Uden](s.vanuden@agrifirm.com).
+Practical questions, for example regarding the meaning of certain data or regarding
+specific trials, can be adressed to [Marijke Ubbink - Blanksma](m.ubbink@agrifirm.com)
+or [Susanne van Uden](s.vanuden@agrifirm.com).
